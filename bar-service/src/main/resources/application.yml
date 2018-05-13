@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: bar-service
+
+# by default, all endpoints except for shutdown are enabled, however only for /health, /info and /docs
+# can be accessed without authentication
+
+# mark all endpoints non sensitive
+endpoints:
+  sensitive: false
