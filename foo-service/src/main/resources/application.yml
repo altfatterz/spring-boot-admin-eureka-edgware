@@ -4,8 +4,18 @@ spring:
   application:
     name: foo-service
 
+
 # by default, all endpoints except for shutdown are enabled, however only for /health, /info and /docs
 # can be accessed without authentication
-management:
-  security:
-    enabled: false
+
+eureka:
+  instance:
+    metadata-map:
+      user.name: ${security.user.name}
+      user.password: ${security.user.password}
+
+security:
+  user:
+    name: foo
+    password: password
+
