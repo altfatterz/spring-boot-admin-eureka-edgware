@@ -7,6 +7,7 @@ spring:
 # by default, all endpoints except for shutdown are enabled, however only for /health, /info and /docs
 # can be accessed without authentication
 
-# mark all endpoints non sensitive
-endpoints:
-  sensitive: false
+# the Actuator security features can be modified using management.security.
+management:
+  security:
+    enabled: false
