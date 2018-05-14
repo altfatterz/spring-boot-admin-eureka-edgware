@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: baz-service
+  boot:
+    admin:
+      url: http://localhost:9999
+      username: admin
+      password: password
+      client:
+        metadata:
+          user.name: ${security.user.name}
+          user.password: ${security.user.password}
+
+security:
+  user:
+    name: baz
+    password: password
+
