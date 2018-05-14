@@ -11,3 +11,8 @@ spring:
 management:
   security:
     enabled: false
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:password@localhost:8761/eureka/

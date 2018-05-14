@@ -9,3 +9,9 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+
+security:
+  user:
+    name: eureka
+    password: password
+

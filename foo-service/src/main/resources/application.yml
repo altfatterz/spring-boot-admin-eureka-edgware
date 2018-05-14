@@ -9,6 +9,10 @@ spring:
 # can be accessed without authentication
 
 eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:password@localhost:8761/eureka/
+
   instance:
     metadata-map:
       user.name: ${security.user.name}
