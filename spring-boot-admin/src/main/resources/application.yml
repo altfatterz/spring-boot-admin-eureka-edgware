@@ -3,3 +3,8 @@ server:
 spring:
   application:
     name: spring-boot-admin
+
+management:
+  security:
+    enabled: false
+
